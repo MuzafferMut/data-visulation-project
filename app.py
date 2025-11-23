@@ -63,7 +63,7 @@ filtered = filtered[(filtered["release_year"] >= year_range[0]) & (filtered["rel
 if free_only:
     filtered = filtered[filtered["price"] == 0]
 
-st.title("Google Play Store Data Visualization")
+st.title("Steam Data Visualization")
 
 #Bar Graph
 st.header("📊 Games by Estimated Downloads")
@@ -193,3 +193,4 @@ td_data = td_data.sort_values("rating", ascending=False).head(200)
 fig_td = px.scatter_3d(td_data, x="difficulty", y="length", z="rating", color="developer",
     hover_name="game_name", title="3D: Difficulty vs Length vs Rating", template="plotly_white",)
 st.plotly_chart(fig_td, width='stretch')
+
