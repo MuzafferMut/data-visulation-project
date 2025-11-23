@@ -17,7 +17,7 @@ Interactive Streamlit app for exploring a game store dataset using rich Plotly v
    ```
 3. Run the app:
    ```bash
-   streamlit run trae_app.py
+   streamlit run app.py
    ```
 
 ## Visualizations
@@ -76,3 +76,4 @@ Interactive Streamlit app for exploring a game store dataset using rich Plotly v
 
 * Technique: 3D scatter plot
 * Insight: Plots difficulty, length, rating in 3D for top games. Helps see clusters of similar game profiles and differences in design complexity.
+
